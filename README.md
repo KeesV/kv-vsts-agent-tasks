@@ -3,7 +3,7 @@
 Some custom tasks for use with the TFS 2015 and Visual Studio Team Services (VSTS) build and release agent.
 
 # Available tasks
-* [Print environment variables](PrintEnvironmentVariables/README.md) - Prints all environment variables to the build log.
+* [Print environment variables](Tasks/PrintEnvironmentVariables/README.md) - Prints all environment variables to the build log.
 
 # Debugging
 1. Clone this repository
