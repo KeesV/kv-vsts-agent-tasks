@@ -1,0 +1,42 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+        {
+			"name": "Launch PrintEnvironmentVariables.ps1",
+			"type": "PowerShell",
+			"program": "Tasks/PrintEnvironmentVariables/PrintEnvironmentVariables.ps1",
+            "args": [ "-Verbose" ],
+            "env": {
+                "system.debug": "true",
+                "BUILD_BUILDNUMBER": "1.0.0.5"
+            }
+		},
+        {
+			"name": "Launch PrintEnvironmentVariables.js",
+			"type": "node",
+			"request": "launch",
+			"program": "Tasks/PrintEnvironmentVariables/PrintEnvironmentVariables.js",
+			"stopOnEntry": false,
+			"args": [],
+			"cwd": ".",
+			"runtimeExecutable": null,
+			"runtimeArgs": [
+				"--nolazy"
+			],
+			"env": {
+				"NODE_ENV": "development",
+                "BUILD_BUILDNUMBER": "1.0.0.5"
+			},
+			"externalConsole": false,
+			"sourceMaps": true,
+			"outDir": "."
+		},
+		{
+			"name": "Attach",
+			"type": "node",
+			"request": "attach",
+			"port": 5858
+		},
+        
+	]
+}

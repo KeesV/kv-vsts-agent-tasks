@@ -1,0 +1,34 @@
+{
+  "id": "6b307ab9-7ff8-4941-9fa5-81ee8ae7e42d",
+  "name": "PrintEnvironmentVariables",
+  "friendlyName": "PrintEnvironmentVariables",
+  "description": "Prints all environment variables into the build log.",
+  "author": "Kees Verhaar",
+  "helpMarkDown": "Prints all environment variables into the build log. This can help when debugging your build.",
+  "category": "Utility",
+  "visibility": [
+    "Build",
+    "Release"
+  ],
+  "demands": [],
+  "version": {
+    "Major": "1",
+    "Minor": "0",
+    "Patch": "0"
+  },
+  "minimumAgentVersion": "1.83.0",
+  "instanceNameFormat": "PrintEnvironmentVariables",
+  "inputs": [
+  ],
+  "execution": {
+    "Node": {
+      "target": "PrintEnvironmentVariables.js",
+      "argumentFormat": ""
+    },
+    "PowerShell": {
+      "target": "$(currentDirectory)\\PrintEnvironmentVariables.ps1",
+      "argumentFormat": "",
+      "workingDirectory": "$(currentDirectory)"
+    }
+  }
+}

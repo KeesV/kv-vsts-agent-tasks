@@ -1,0 +1,21 @@
+{
+  "name": "dn_build_customizations",
+  "version": "1.0.0",
+  "description": "Delta-N build customizations for TFS/VSTS Build 2015",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://delta-n.visualstudio.com/DefaultCollection/DN_ALM/_git/dn_build_customizations"
+  },
+  "keywords": [
+    "build"
+  ],
+  "author": "Kees Verhaar",
+  "license": "ISC",
+  "dependencies": {
+    "vso-task-lib": "^0.5.5"
+  }
+}
