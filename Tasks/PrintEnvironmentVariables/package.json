@@ -1,8 +1,8 @@
 {
-  "name": "kv_build_customizations",
-  "version": "1.0.0",
-  "description": "Build customizations for TFS/VSTS Build 2015",
-  "main": "index.js",
+  "name": "printenvironmentvariables",
+  "version": "1.0.1",
+  "description": "VSTS task to print environment variables",
+  "main": "PrintEnvironmentVariables.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,8 +10,8 @@
     "type": "git",
     "url": "https://github.com/KeesV/kv-vsts-agent-tasks"
   },
-  "keywords": [
-    "build"
+  "keywords" : [
+      "build"
   ],
   "author": "Kees Verhaar",
   "license": "ISC",

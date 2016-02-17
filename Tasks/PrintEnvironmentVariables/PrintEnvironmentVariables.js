@@ -1,4 +1,4 @@
-var tl = require('vso-task-lib');
+var tl = require('vsts-task-lib/task');
 
 tl.debug("Printing all environment variables...");
 for(var key in process.env)

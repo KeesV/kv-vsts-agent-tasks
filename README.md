@@ -10,16 +10,20 @@ In order to use the tasks, you'll first need to upload them to your VSTS account
 
 1. Clone this repository (if you didn't do this already)
 2. Make sure you have NodeJS installed ([https://nodejs.org](https://nodejs.org))
-3. Install tfx-cli through NPM: 
+3. cd to the directory of the task that you need
+4. Install the node modules for the task:
+
+    `npm install`
+5. Install tfx-cli through NPM: 
 
     `npm install -g tfx-cli`
-4. Then connect to your VSTS account:
+6. Then connect to your VSTS account:
 
     `tfx login`
-5. Finally, upload the task that you need:
+7. Finally, upload the task (don't forget the . at the end):
 
-    `tfx build tasks upload --task-path Tasks/<task folder>`
-6. You'll then be able to select the uploaded task from the list of available tasks.
+    `tfx build tasks upload --task-path .`
+8. You'll then be able to select the uploaded task from the list of available tasks.
 ![add-task](Doc/img/add-task.jpg)
 
 # Debugging
